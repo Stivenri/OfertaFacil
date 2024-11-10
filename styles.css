@@ -1,0 +1,190 @@
+/* Encabezado */
+.header {
+    position: fixed;/* Hace que el encabezado quede fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;     /* Asegura que ocupe todo el ancho de la pantalla */
+    height: 5px;
+    display: flex;
+    flex-direction: row;  /* Cambiar a disposición en fila para que el logo y los otros elementos estén en fila */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center;  /* Alinea los elementos verticalmente */
+    background-color: #0c1a3e; /* Azul oscuro */
+    color: white;
+    padding: 62px 130px;
+    z-index: 100;   /* Coloca el encabezado por encima de otros elementos */
+}
+/* Logo dentro del encabezado */
+.header .logo {
+    display: flex;
+    align-items: center;  /* Alinea el logo y el texto en el centro */
+}
+
+.header .logo img {
+    height: 90px; /* Ajusta el tamaño del logo */
+    margin-right: 180px; /* Espacio a la derecha del logo */
+}
+
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    align-items: left;
+}
+
+.nav-menu a {
+    color: rgb(228, 228, 228); /* Color normal de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #cb5b1f; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Barra de búsqueda y enlaces de autenticación alineados a la derecha */
+.header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  /* Alinea los elementos a la derecha */
+    gap: 15px;  /* Espacio entre los elementos */
+}
+
+/* Estilo para el contenedor de la barra de búsqueda */
+.search-container {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    margin-left: 5px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    height: 45px; 
+}
+
+/* Enlaces de autenticación */
+.auth-links a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background-color: #e1e0de;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgb(255, 174, 12);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    background-color: #1A1A3C;
+    color: #fff;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.input-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #59598c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f7a623;
+}
+
+.image-container {
+    flex: 1;
+    background-image: url('https://static.wixstatic.com/media/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg/v1/fill/w_491,h_639,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg'); /* Cambia 'background-image.jpg' por el nombre de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
