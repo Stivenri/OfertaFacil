@@ -36,30 +36,30 @@
     <div class="container">
         <div class="form-container">
             <h1>Crear una cuenta</h1>
-            <form id="registerForm">
+            <form action="php/registro_usuario_be.php" method="POST">
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstName">Nombre</label>
-                        <input type="text" id="firstName" placeholder="Nombre" required>
+                        <input type="text" id="firstName" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="input-box">
                         <label for="lastName">Apellido</label>
-                        <input type="text" id="lastName" placeholder="Apellido" required>
+                        <input type="text" id="lastName" name="apellido" placeholder="Apellido" required>
                     </div>
                 </div>
                 <div class="input-box">
                     <label for="birthdate">Fecha de nacimiento</label>
-                    <input type="date" id="birthdate" required>
+                    <input type="date" id="birthdate" name="fechaNacimiento" required>
                 </div>
                 <div class="input-box">
                     <label for="email">Email *</label>
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
                     <label for="password">Contraseña *</label>
-                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <input type="password" id="password" name="contraseña" placeholder="Contraseña" required>
                 </div>
-                <button type="submit">Sign Up</button>
+                <button type="submit">Registrar</button>
             </form>
         </div>
         <div class="image-container"></div>
