@@ -34,7 +34,7 @@
 
 <!-- Contenido de registro -->
     <div class="container">
-        <div class="form-container">
+            <div class="form-container">
             <h1>Crear una cuenta</h1>
             <form action="php/registro_usuario_be.php" method="POST">
                 <div class="input-group">
