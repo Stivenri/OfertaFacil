@@ -184,7 +184,14 @@ button:hover {
 
 .image-container {
     flex: 1;
-    background-image: url('https://static.wixstatic.com/media/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg/v1/fill/w_246,h_320,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg'); /* Cambia 'background-image.jpg' por el nombre de tu imagen de fondo */
+    background-image: url('https://static.wixstatic.com/media/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg/v1/fill/w_491,h_639,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_dbd82904e3e447898acbf7c3632ee55b~mv2.jpg'); /* Cambia 'background-image.jpg' por el nombre de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-image {
+    flex: 1;
+    background-image: url('https://static.wixstatic.com/media/11062b_7f180ade2fd94cb08a172983c0d93f05~mv2.jpg/v1/fill/w_588,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_7f180ade2fd94cb08a172983c0d93f05~mv2.jpg'); /* Cambia esta URL por la imagen deseada */
     background-size: cover;
     background-position: center;
 }

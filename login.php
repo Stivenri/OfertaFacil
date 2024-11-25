@@ -27,13 +27,13 @@
             <button type="button">🔍</button>
         </div>
         <div class="auth-links">
-            <a href="#">Registrarse</a>
+            <a href="index.php">Registrarse</a>
         </div>
     </header>
 
 <!-- Contenido de login -->
     <div class="container">
-    
+    <div class="login-image"></div>
         <div class="form-container">
             <h1>Iniciar Sesión</h1>
             <form action="php/login_usuario_be.php" method="POST">
@@ -48,7 +48,7 @@
             <button type="submit">Iniciar Sesión</button>
             </form>
         </div>
-        <div class="image-container"></div>
+        
     </div>
     <script src="script.js"></script>
 </body>

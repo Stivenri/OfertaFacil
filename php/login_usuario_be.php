@@ -9,7 +9,7 @@ $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE
 email='$email' and contraseña='$contraseña'");
 
 if(mysqli_num_rows($validar_login) > 0){
-    header("location: ../bienvenida.php");
+    header("location: ../inicio.php");
     exit;
 }else{
     echo '

@@ -27,7 +27,7 @@
             <button type="button">🔍</button>
         </div>
         <div class="auth-links">
-            <a href="#">Cerrar_sesión</a>
+            <a href="login.php">Cerrar_sesión</a>
         </div>
     </header>
 </body>
