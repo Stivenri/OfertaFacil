@@ -31,14 +31,14 @@ if($ejecutar){
     echo '
     <script>
         alert("Usuario almacenado exitosamente");
-        window.location = "../index.php";
+        window.location = "../login.php";
     </script>
     ';
 }else{
     echo '
         <script>
             alert("Inténtelo de nuevo, usuario no almacenado");
-            window.location = "../login.php";
+            window.location = "../index.php";
         </script>
     ';
 }

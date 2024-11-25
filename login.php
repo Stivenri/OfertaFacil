@@ -27,8 +27,7 @@
             <button type="button">🔍</button>
         </div>
         <div class="auth-links">
-            <a href="#">Iniciar Sesión</a>
-            <a href="#">Inscribirse</a>
+            <a href="#">Registrarse</a>
         </div>
     </header>
 

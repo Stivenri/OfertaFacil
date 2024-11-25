@@ -1,0 +1,275 @@
+/* Encabezado */
+.header {
+    position: fixed;/* Hace que el encabezado quede fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;     /* Asegura que ocupe todo el ancho de la pantalla */
+    height: 5px;
+    display: flex;
+    flex-direction: row;  /* Cambiar a disposición en fila para que el logo y los otros elementos estén en fila */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center;  /* Alinea los elementos verticalmente */
+    background-color: #0c1a3e; /* Azul oscuro */
+    color: white;
+    padding: 62px 130px;
+    z-index: 100;   /* Coloca el encabezado por encima de otros elementos */
+}
+/* Logo dentro del encabezado */
+.header .logo {
+    display: flex;
+    align-items: center;  /* Alinea el logo y el texto en el centro */
+}
+
+.header .logo img {
+    height: 90px; /* Ajusta el tamaño del logo */
+    margin-right: 180px; /* Espacio a la derecha del logo */
+}
+
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    align-items: left;
+}
+
+.nav-menu a {
+    color: rgb(228, 228, 228); /* Color normal de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #cb5b1f; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Barra de búsqueda y enlaces de autenticación alineados a la derecha */
+.header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  /* Alinea los elementos a la derecha */
+    gap: 15px;  /* Espacio entre los elementos */
+}
+
+/* Estilo para el contenedor de la barra de búsqueda */
+.search-container {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    margin-left: 5px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    height: 45px; 
+}
+
+/* Enlaces de autenticación */
+.auth-links a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    width: 100%; /* Solo 1 imagen visible a la vez */
+    height: 100%;
+    animation: slide 12s infinite; /* Animación para la transición de imágenes */
+}
+
+/* Elementos del carrusel */
+.banner-item {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
+    display: flex; /* Asegura que se mantenga el layout adecuado */
+    justify-content: center; /* Centra la imagen dentro del item */
+}
+
+/* Imagenes del carrusel */
+.banner-item img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: 140%; /* Imagen ocupa la altura completa */
+    object-fit: cover; /* Cubre el contenedor proporcionalmente */
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    0%, 33% { transform: translateX(0); }       /* Primera imagen visible */
+    34%, 66% { transform: translateX(-100%); } /* Segunda imagen visible */
+    67%, 100% { transform: translateX(-200%); }/* Tercera imagen visible */
+}
+
+
+/* Opciones rápidas */
+.quick-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9ecef;
+    padding: 30px 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.option {
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.option h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.option p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Subastas */
+.auctions {
+    padding: 20px;
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+}
+
+.auctions h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.auction-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.auction-item {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.auction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.auction-item img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.auction-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Botón "Shop All" */
+.auctions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.auctions button:hover {
+    background-color: #0056b3;
+}
+
+.search-container input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #59598c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-container button {
+    background-color: #e1e0de;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f7a623;
+}
+
